@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "colourcurver": {
+      "type": "http",
+      "url": "https://www.colourcurver.com/api/mcp"
+    }
+  }
+}
