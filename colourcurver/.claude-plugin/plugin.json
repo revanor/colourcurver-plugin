@@ -1,11 +1,12 @@
 {
   "name": "colourcurver",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Create, refine, and apply your ColourCurver palettes from your coding assistant.",
   "author": {
     "name": "ColourCurver",
     "url": "https://www.colourcurver.com"
   },
   "homepage": "https://www.colourcurver.com",
-  "license": "MIT"
+  "license": "MIT",
+  "privacyPolicyUrl": "https://www.colourcurver.com/privacy-policy"
 }

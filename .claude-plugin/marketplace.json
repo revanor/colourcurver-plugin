@@ -10,7 +10,7 @@
       "name": "colourcurver",
       "source": "./colourcurver",
       "description": "Create, refine, and apply your ColourCurver palettes from your coding assistant.",
-      "version": "1.0.7"
+      "version": "1.0.8"
     }
   ]
 }
