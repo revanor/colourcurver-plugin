@@ -1,7 +1,7 @@
 {
   "name": "colourcurver",
-  "version": "1.0.9",
-  "description": "Create, refine, and apply your ColourCurver palettes from your coding assistant.",
+  "version": "1.0.10",
+  "description": "Create and refine colour palettes with ColourCurver, then apply their tokens to your project.",
   "author": {
     "name": "ColourCurver",
     "url": "https://www.colourcurver.com"

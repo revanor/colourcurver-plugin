@@ -1,6 +1,6 @@
 # ColourCurver for Codex and Claude Code
 
-Create, inspect, and refine saved ColourCurver palettes, then apply exported tokens in your project. Your existing permissions and plan limits apply. Explicit edits save to drafts; ask for a preview to explore without saving.
+Create, inspect, and refine saved ColourCurver colour palettes, then apply exported tokens in your project. Your existing permissions and plan limits apply. Explicit edits save to drafts; ask for a preview to explore without saving.
 
 ## Install
 
@@ -46,19 +46,19 @@ Sign in to ColourCurver and approve the consent screen. Never paste an access to
 
 ## Example requests
 
-- “Create a five-tone palette around #6d28d9 in my personal workspace.”
-- “Find my Brand palette, keep the main swatch locked, and make the blue ramp warmer.”
+- “Create a five-tone colour palette around #6d28d9 in my personal workspace.”
+- “Find my Brand colour palette, keep the main swatch locked, and make the blue ramp warmer.”
 - “Preview a different light-mode curve without saving.”
 - “Use this library scale and keep its library link.”
 - “Apply the draft's CSS tokens to this project's existing theme setup.”
 
-When several palettes or workspaces match, the assistant asks which one to use. It also asks which mode should be the source for an ambiguous mode relink. Conflicts require reading the current palette; interrupted writes are resolved with their mutation receipt.
+When several colour palettes or workspaces match, the assistant asks which one to use. It also asks which mode should be the source for an ambiguous mode relink. Conflicts require reading the current colour palette; interrupted writes are resolved with their mutation receipt.
 
 ## Project integration
 
-The assistant writes exported content using its local file tools. The remote server has no access to your filesystem. Drafts and private palettes can use versioned snapshots. Published palettes support JSON, CSS, Figma, and DTCG artifacts. Draft exports support the existing editor formats; draft DTCG is unavailable.
+The assistant writes exported content using its local file tools. The remote server has no access to your filesystem. Drafts and private colour palettes can use versioned snapshots. Published colour palettes support JSON, CSS, Figma, and DTCG artifacts. Draft exports support the existing editor formats; draft DTCG is unavailable.
 
-For persistent publication tracking, install `@colourcurver/cli@1.0.0` as an exact development dependency and use its existing `colourcurver pull --manifest <url> --format css --output generated/colourcurver.css` command. A palette manifest tracks the latest publication; a revision manifest pins it. Private CLI access requires a separate Generic website connection token in trusted local or CI secret management. Do not use an MCP OAuth token for the CLI.
+For persistent publication tracking, install `@colourcurver/cli@1.0.0` as an exact development dependency and use its existing `colourcurver pull --manifest <url> --format css --output generated/colourcurver.css` command. A colour palette manifest tracks the latest publication; a revision manifest pins it. Private CLI access requires a separate Generic website connection token in trusted local or CI secret management. Do not use an MCP OAuth token for the CLI.
 
 CSS exports follow the system colour scheme. Projects using a class or data attribute for manual theme switching should consume JSON or published DTCG through their existing theme mechanism.
 
@@ -68,7 +68,7 @@ The server uses the official TypeScript MCP SDK v2, negotiates supported protoco
 
 - **Not found / unavailable endpoint:** the rollout may be disabled, or a staging plugin may point at production. Check its packaged MCP URL.
 - **Reconnect:** repeat the host's OAuth connection flow. A revoked connection cannot use an unexpired old token.
-- **Palette changed:** read it again and reconsider the edit before submitting with its new head.
+- **Colour palette changed:** read it again and reconsider the edit before submitting with its new head.
 - **Interrupted save:** check `get_mutation_status`; retry with exactly the same mutation ID and arguments.
 - **Permission or limit error:** use your current ColourCurver workspace access and plan. The plugin does not add entitlements.
 - **Shared edits unavailable:** the collaboration service, its signed internal endpoint, and outbox delivery must be configured.
